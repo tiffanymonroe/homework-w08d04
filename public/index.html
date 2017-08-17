@@ -14,13 +14,15 @@
 
 <h4 class="header">Book database</h4>
 <div class="container">
+
 <h5> Add a new book </h5>
-<form>
-Title: <br /> <input type="text" placeholder="title"> <br /> <br />
-Author:  <br /> <input type="text" placeholder="author"> <br /> <br />
-Description: <br />  <input type="text" placeholder="description"> <br /> <br />
+<form ng-submit="ctrl.createBooks();">
+Title: <br /> <input type="text" ng-model="ctrl.title" placeholder="title"> <br /> <br />
+Author:  <br /> <input type="text" ng-model="ctrl.author" placeholder="author"> <br /> <br />
+Description: <br />  <input type="text" ng-model="ctrl.description" placeholder="description"> <br /> <br />
 <input type="submit" value="Submit new book" class="btn btn-success">
 </form>
+
 </div>
 </body>
 </html>
