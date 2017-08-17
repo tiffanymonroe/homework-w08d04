@@ -12,9 +12,26 @@
 </head>
 <body ng-controller="mainController as ctrl">
 
-<h4 class="header">Book database</h4>
-<div class="container">
 
+<h4 class="header">Book database</h4>
+
+  <div class="bookList" ng-repeat="book in ctrl.books">
+    Title: {{book.title}} <br />
+    Author: {{book.author}} <br />
+    Description: {{book.description}} <br />
+    <!-- delete book -->
+    <button ng-click="ctrl.deleteBook(book)" class="btn btn-primary">Delete</button>
+      <!-- edit book -->
+  <a href="#" ng-click="ctrl.index = $index">Edit</a>
+  <form ng-if="$index===ctrl.index"  ng-submit="ctrl.editBook(book)">
+    Title: <br /> <input type="text" ng-model="ctrl.editedTitle" placeholder="title"> <br /> <br />
+    Author:  <br /> <input type="text" ng-model="ctrl.editedAuthor" placeholder="author"> <br /> <br />
+    Description: <br />  <input type="text" ng-model="ctrl.editedDescription" placeholder="description"> <br /> <br />
+    <input type="submit" value="Submit new book" class="btn btn-success">
+  </form>
+</div>
+  <!-- add book -->
+<div class="container">
 <h5> Add a new book </h5>
 <form ng-submit="ctrl.createBooks();">
 Title: <br /> <input type="text" ng-model="ctrl.title" placeholder="title"> <br /> <br />
