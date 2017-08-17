@@ -43,6 +43,7 @@ app.controller('mainController', [function(){
         title: this.editedTitle,
         description: this.editedDescription,
         author: this.editedAuthor
+      }
     }).then(
       function(res){
         controller.getBooks();
