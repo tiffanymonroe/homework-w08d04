@@ -39,7 +39,7 @@ app.controller('mainController', ['$http', function($http){
   this.editBook = function(book){
     $http({
       method: 'put',
-      url: '/books' + book._id,
+      url: '/books/' + book._id,
       data: {
         title: this.editedTitle,
         description: this.editedDescription,
