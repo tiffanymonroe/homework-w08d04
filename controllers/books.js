@@ -19,7 +19,7 @@ router.post('/', (req, res)=>{
 
 //Delete
 router.delete('/:id', (req, res)=>{
-  Books.findByIdAndRemove(req.params.id, (err, deletedBook)={
+  Books.findByIdAndRemove(req.params.id, (err, deletedBook)=>{
     res.json(deletedBook);
   })
 })
