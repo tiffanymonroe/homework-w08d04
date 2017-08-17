@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 const booksController = require('./controllers/books.js');
-app.use('/books', )
+app.use('/books', booksController)
 
 
 //Connections
