@@ -3,7 +3,7 @@ const app = angular.module('bookApp', [])
 app.controller('mainController', ['$http', function($http){
   const controller = this;
   this.books = [];
-
+  this.edit = 1;
   this.getBooks = function(){
     $http({
       method: 'get',
