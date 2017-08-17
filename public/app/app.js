@@ -1,6 +1,6 @@
 const app = angular.module('bookApp', [])
 
-app.controller('mainController', [function(){
+app.controller('mainController', ['$http', function($http){
   const controller = this;
   this.books = [];
 
@@ -11,6 +11,7 @@ app.controller('mainController', [function(){
     }).then(
       function(res){
         controller.books = res.data
+        console.log(controller.books);
       },
       function(err){
         console.log(err);

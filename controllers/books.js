@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Book = require('../models/books.js');
+const Books = require('../models/books.js');
 
 //Index
 router.get('/', (req, res)=>{
