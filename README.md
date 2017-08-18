@@ -2,4 +2,4 @@
 David Gardner
 Tiffany Monroe
 
-Hi Tiffany I'm writing you this message
+Make sure to go to '/seed' once to add the books. Thanks!
