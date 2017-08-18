@@ -11,6 +11,9 @@ app.use(express.static('public'));
 const booksController = require('./controllers/books.js');
 app.use('/books', booksController)
 
+const seedController = require ('./controllers/seed_data.js');
+app.use('/seed', seedController);
+
 
 //Connections
 mongoose.connect('mongodb://localhost:27017/book_app');

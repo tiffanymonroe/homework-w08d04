@@ -1,24 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/** {
+  border: 1px solid red;
+}*/
 
 body {
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
+  background-image: url('http://reformedforum.org/wp-content/blogs.dir/1/files/2016/06/book.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
 
-.container {
-  margin: 20px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
 }
 
-.bookList {
-  margin: 20px;
+.title {
+  text-align: center;
+  margin-top: 2.5%;
+}
+.info{
+  background-color: rgba(255,255,255,0.5);
+  margin: 4%;
+  padding: 2.5em;
+  height: 200px;
+  overflow: scroll;
 }
 
-.btn {
-
-  font-size: 12px;
+.info:hover {
+  background-color:  rgba(255,255,255,0.8);
 }
 
-.header{
-  background-color: grey;
+.add {
+  background-color: rgba(255,255,255,0.5);
+  margin: 2.5%;
+  padding: 2.5em;
+}
+
+.btn.btn-default {
+  background-color: black;
   color: white;
+}
+
+.col-xs-4 {
+  border: 1px solid red;
 }
